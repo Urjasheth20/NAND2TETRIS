@@ -47,4 +47,4 @@ begin
             OUT2 => OUT4
         );
 
-end architecture Behavioral;
+end architecture Structural;

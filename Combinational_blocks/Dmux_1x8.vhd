@@ -17,7 +17,7 @@ entity Dmux8Way is
     );
 end entity Dmux8Way;
 
-architecture Behavioral of Dmux8Way is
+architecture Structural of Dmux8Way is
 
     signal D1_OUT1 : STD_LOGIC;
     signal D1_OUT2 : STD_LOGIC;
@@ -55,4 +55,4 @@ begin
             OUT4 => OUT8
         );
 
-end architecture Behavioral;
+end architecture Structural;
