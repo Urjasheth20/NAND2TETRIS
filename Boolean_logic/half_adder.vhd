@@ -14,13 +14,15 @@ architecture Structural of half_adder is
 
 begin
 
-    EXOR1: entity work.ExorGate(
+    EXOR1: entity work.ExorGate
+        port map ( 
         A               => A,
         B               => B,
         out_Exor        => SUM
     );
 
-    AND1: entity work.AndGate(
+    AND1: entity work.AndGate
+     port map(
         A               => A,
         B               => B,
         out_AND        => CARRY
