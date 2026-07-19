@@ -11,5 +11,5 @@ end NandGate;
 
 architecture Dataflow of NandGate is 
     begin
-        OUT_NAND <= not (A and B);
+        OUT_NAND <= A nand B;
 end Dataflow;
