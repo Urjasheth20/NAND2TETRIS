@@ -3,14 +3,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity NandGate is
     port (
-        a        : in STD_LOGIC;
-        b  : in STD_LOGIC;
-        out_Nand : out STD_LOGIC 
+        A        : in STD_LOGIC;
+        B        : in STD_LOGIC;
+        OUT_NAND : out STD_LOGIC 
     );
 end NandGate;
 
 architecture Dataflow of NandGate is 
     begin
-        out_Nand <= not (a and b);
+        OUT_NAND <= not (A and B);
 end Dataflow;
-

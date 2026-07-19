@@ -3,9 +3,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity AndGate is
     port (
-        a       : in  STD_LOGIC;
-        b       : in  STD_LOGIC;
-        out_And : out STD_LOGIC
+        A       : in  STD_LOGIC;
+        B       : in  STD_LOGIC;
+        OUT_AND : out STD_LOGIC
     );
 end entity AndGate;
 
@@ -17,15 +17,15 @@ begin
 
     NAND1: entity work.NandGate
         port map (
-            a        => a,
-            b        => b,
-            out_Nand => nand_out
+            A        => A,
+            B        => B,
+            OUT_NAND => nand_out
         );
 
     NOT1: entity work.NotGate
         port map (
-            a       => nand_out,
-            out_Not => out_And
+            A       => nand_out,
+            OUT_NOT => OUT_AND
         );
 
 end architecture Structural;
