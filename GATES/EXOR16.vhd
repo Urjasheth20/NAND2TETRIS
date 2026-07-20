@@ -21,15 +21,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity EXOR16 is
+entity Exor16 is
     Port(
         A        : in  STD_LOGIC_VECTOR(15 downto 0);
         B        : in  STD_LOGIC_VECTOR(15 downto 0);
         OUT_EXOR : out STD_LOGIC_VECTOR(15 downto 0)
     );
-end EXOR16;
+end Exor16;
 
-architecture Structural of EXOR16 is
+architecture Structural of Exor16 is
 
     component ExorGate
         Port(

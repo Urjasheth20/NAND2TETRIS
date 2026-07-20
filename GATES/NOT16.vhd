@@ -1,15 +1,15 @@
 library ieee;
 use IEEE.std_logic_1164.all;
 
-entity NOT16 is
+entity Not16 is
  Port (A : in STD_LOGIC_VECTOR(15 downto 0);
  OUT_NOT : out STD_LOGIC_VECTOR(15 downto 0)
   );
  
  
-end NOT16;
+end Not16;
 
-architecture Structural of NOT16 is 
+architecture Structural of Not16 is 
 
 component NotGate
 Port(A : in STD_LOGIC ;
