@@ -24,7 +24,7 @@ begin
             A     => A,
             B     => B,
             SUM   => SUM1,
-            CARRY => CARRY1
+            COUT => CARRY1
         );
 
     HA2 : entity work.half_adder
@@ -32,7 +32,7 @@ begin
             A     => SUM1,
             B     => CIN,
             SUM   => SUM,
-            CARRY => CARRY2
+            COUT => CARRY2
         );
 
     OR1 : entity work.OrGate

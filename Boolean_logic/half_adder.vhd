@@ -6,7 +6,7 @@ entity half_adder is
         A     : in  STD_LOGIC;
         B     : in  STD_LOGIC;
         SUM   : out STD_LOGIC;
-        CARRY : out STD_LOGIC
+        COUT  : out STD_LOGIC
     );
 end entity half_adder;
 
@@ -29,7 +29,7 @@ begin
 
         A               => A,
         B               => B,
-        out_AND        => CARRY
+        out_AND        => COUT
     );
 
 end architecture Structural;
